@@ -1,0 +1,54 @@
+[user]
+	name = Matthew J Perez
+	email = matt@mperez.io
+	signingkey = 1A855A4BD86FB53B
+[github]
+	user = mattjperez
+[core]
+	editor = nvim
+	pager = delta
+	autocrlf = input
+	safecrlf = true
+[interactive]
+	diffFilter = delta --color-only
+[add.interactive]
+	useBuiltin = false # required for git 2.37.0
+[delta]
+	navigate = true # use n and N to move between diff sections
+	light = false
+[merge]
+	tool = nvim -d
+[diff]
+	colorMoved = default
+	algorithm = patience
+	compactionHeuristic = true
+[commit]
+	gpgSign = true
+[gpg]
+	program = gpg
+[tag]
+	forceSignAnnotated = false
+[alias]
+	c = commit
+	s = status
+	st = status
+	lg = log --oneline
+	last = log -1 HEAD
+	cl = log -p -- ':(exclude)Cargo.lock'
+	f = push --force-with-lease
+	# https://stackoverflow.com/a/11688523/472927
+	ss = "!f() { git stash show stash^{/$*} -p; }; f"
+	sa = "!f() { git stash apply stash^{/$*}; }; f"
+	sl = stash list
+[pull]
+	ff = only
+[push]
+	default = simple
+[ui "color"]
+	ui = always
+[color]
+	ui = true
+[init]
+	defaultBranch = main
+[help]
+	autocorrect = 1
