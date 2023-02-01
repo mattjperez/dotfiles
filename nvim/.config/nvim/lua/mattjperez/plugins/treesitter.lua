@@ -4,6 +4,7 @@ if not status then
 end
 
 treesitter.setup({
+	ident = true,
 	highlight = {
 		enable = true,
 	},
@@ -15,6 +16,7 @@ treesitter.setup({
 	},
 	ensure_installed = {
 		"rust",
+		"lua",
 		"json",
 		"typescript",
 		"go",
@@ -27,3 +29,6 @@ treesitter.setup({
 	},
 	auto_install = true,
 })
+
+vim.wo.foldmethod = "expr"
+vim.wo.foldexpr = "nvim_treesitter#foldexpr()"

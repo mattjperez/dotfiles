@@ -20,22 +20,22 @@ opt.smartcase = true
 -- cursor line
 opt.cursorline = true
 
+-- appearance
+opt.termguicolors = true
+opt.background = "dark"
+opt.signcolumn = "yes"
+
 -- Number of lines to keep above/below cursor
 opt.scrolloff = 8
 
 -- undo, persistent
 opt.undofile = true
 
--- appearance
-opt.termguicolors = true
-opt.background = "dark"
-opt.signcolumn = "yes"
-
 -- backspace
 opt.backspace = "indent,eol,start"
 
 -- clipboard
-opt.clipboard = "unnamedplus"
+opt.clipboard:append("unnamedplus")
 
 -- split windows
 opt.splitright = true

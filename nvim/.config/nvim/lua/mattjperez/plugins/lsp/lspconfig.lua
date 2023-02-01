@@ -35,6 +35,22 @@ end
 -- used to enable autocompletion (assign to every lsp server config)
 local capabilities = cmp_nvim_lsp.default_capabilities()
 
+-- rust tools
+local rt_status, rt = pcall(require, "rust-tools")
+if not rt_status then
+	return
+end
+
+rt.setup({
+	server = {
+		on_attach = function(_, bufnr)
+			-- Hover actions
+			vim.keymap.set("n", "<C-space>", rt.hover_actions.hover_actions, { buffer = bufnr })
+			vim.keymap.set("n", "<leader>a", rt.code_action_group.code_action_group, { buffer = bufnr })
+		end,
+	},
+})
+
 -- configure html server
 lspconfig["html"].setup({
 	capabilities = capabilities,

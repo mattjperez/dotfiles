@@ -31,6 +31,7 @@ export PATH="$PATH:$GOPATH/bin"
 #export DOCKER_HOST=unix://$XDG_RUNTIME_DIR/docker.sock
  
 # Aliases
+# alias tunnel_<instance_name>=gcloud compute start-iap-tunnel <instance_name> <instance_port> --local-host-port=localhost:<local_port>
 alias ssh='TERM=xterm-256color ssh'
 alias batt='upower -i /org/freedesktop/UPower/devices/battery_BAT1'
 alias etherup='sudo ip link set enp0s13f0u2u1 up'
