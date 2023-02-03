@@ -2,12 +2,13 @@ My personal dotfiles.
 
 requirements:
 
+- neovim >= 0.8.1
 - curl
 - build-essential
 - pkg-cfg
 - libssl
 - cmake
-- nodejs
+- npm
 
 Includes:
 

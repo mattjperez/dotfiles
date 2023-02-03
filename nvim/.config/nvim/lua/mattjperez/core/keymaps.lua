@@ -21,11 +21,11 @@ keymap.set("n", "<leader>sh", "<C-w>v") -- split horizontal
 keymap.set("n", "<leader>se", "<C-w>=") -- equalize split windows
 keymap.set("n", "<leader>sx", ":close<CR>") -- close current split
 
--- tab management 
+-- tab management
 keymap.set("n", "<leader>to", ":tabnew<CR>") -- new tab
 keymap.set("n", "<leader>tx", ":tabclose<CR>") -- close tab
 keymap.set("n", "<leader>tn", ":tabn<CR>") -- next tab
-keymap.set("n", "<leader>tp", ":tabp<CR>") -- prev tab 
+keymap.set("n", "<leader>tp", ":tabp<CR>") -- prev tab
 
 -- nvim-tree
 keymap.set("n", "<leader>e", ":NvimTreeToggle<CR>")
