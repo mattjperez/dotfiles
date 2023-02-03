@@ -85,22 +85,22 @@ lspconfig.rust_analyzer.setup({
 })
 
 -- configure python server
-lspconfig["pyright"].setup({
-	capabilities = capabilities,
-	on_attach = on_attach,
-})
+--lspconfig["pyright"].setup({
+--	capabilities = capabilities,
+--	on_attach = on_attach,
+--})
 
 -- configure go server
-lspconfig["gopls"].setup({
-	capabilities = capabilities,
-	on_attach = on_attach,
-})
+--lspconfig["gopls"].setup({
+--	capabilities = capabilities,
+--	on_attach = on_attach,
+--})
 
 -- configure asm server
-lspconfig["asm_lsp"].setup({
-	capabilities = capabilities,
-	on_attach = on_attach,
-})
+--lspconfig["asm_lsp"].setup({
+--	capabilities = capabilities,
+--	on_attach = on_attach,
+--})
 
 -- configure markdown server
 lspconfig["marksman"].setup({
@@ -109,10 +109,10 @@ lspconfig["marksman"].setup({
 })
 
 -- configure json server
-lspconfig["jsonls"].setup({
-	capabilities = capabilities,
-	on_attach = on_attach,
-})
+--lspconfig["jsonls"].setup({
+--	capabilities = capabilities,
+--	on_attach = on_attach,
+--})
 
 -- configure toml server
 lspconfig["taplo"].setup({

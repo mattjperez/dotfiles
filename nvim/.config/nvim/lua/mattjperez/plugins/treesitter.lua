@@ -18,17 +18,11 @@ treesitter.setup({
 		"rust",
 		"lua",
 		"json",
-		"typescript",
-		"go",
 		"html",
 		"markdown",
 		"bash",
 		"vim",
-		"dockerfile",
 		"gitignore",
 	},
 	auto_install = true,
 })
-
-vim.wo.foldmethod = "expr"
-vim.wo.foldexpr = "nvim_treesitter#foldexpr()"
