@@ -1,24 +1,9 @@
-# Spaceship Prompt
-autoload -U promptinit; promptinit
-prompt spaceship
-
-# zoom meetings support for screenshare
-export XDG_CURRENT_DESKTOP=gnome
-
-export QT_QPA_PLATFORM=wayland
-
 # GCP IAP access to numpy
 export CLOUDSDK_PYTHON_SITEPACKAGES=1
 
 # zoxide
 eval "$(zoxide init zsh)"
 #eval "$(wmname LG3D)"
-
-# direnv
-eval "$(direnv hook zsh)"
-
-# Chapel: Avoid contention for runtime
-export CHPL_RT_OVERSUBSCRIBED=yes
 
 #export GPG_TTY=$TTY
 # Rust
